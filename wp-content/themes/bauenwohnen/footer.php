@@ -1,17 +1,23 @@
 	<footer class="site-footer">
 
 			<section class="site-footer__contact">
-				<p class="site-footer__contact-data">
-					Peter Parapatits<br>
-					Angergasse 10<br>
-					7341 Markt Sankt Martin<br>
-					<a href="tel:+4326182221">+43 2618/2221</a><br>
-					<a href="mailto:tischlerei@parapatits.at">tischlerei@parapatits.at</a><br>
-				</p>
-				<ul class="site-footer__contact-social-media-area">
-					<li><a href="https://www.facebook.com/Tischlerwerkst%C3%A4tte-Parapatits-Peter-101976324759010" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--facebook" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/icons/facebook-icon.svg" alt="Facebook Logo"></a></li>
-					<li><a href="https://www.instagram.com/tischlereiparapatits/" target="_blank"><img class="footer-contact__social-media-icon footer-contact__social-media-icon--instragram" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/icons/instagram-icon.svg" alt="Instagram Logo"></a></li>
-				</ul>
+				<?php
+					$args = array(
+						'post_status' => 'publish',
+						'posts_per_page' => 1,
+						'post_type' => 'company-details',
+					);
+					$loop = new WP_Query( $args );
+						while ( $loop->have_posts() ) : $loop->the_post(); ?>
+							<p class="site-footer__contact-data">
+						<?php the_field('company-name')?><br>
+						<?php the_field('company-address')?><br>
+						<a href="tel:<?php the_field('company-phonenumber')?>"><?php the_field('company-phonenumber')?></a><br>
+						<a href="mailto:<?php the_field('company-email')?>"><?php the_field('company-email')?></a><br>
+					</p>
+					<?php
+					endwhile;
+					?>
 			</section>
 
 			<nav class="site-footer__navigation">
@@ -30,7 +36,7 @@
 				</ul>
 			</nav>
 
-			<p class="site-footer__copyright">alle Rechte vorbehalten ©&nbsp;2022</p>
+			<p class="site-footer__copyright">Alle Rechte vorbehalten ©&nbsp;2022</p>
 
 		</footer>
 

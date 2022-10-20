@@ -104,7 +104,7 @@
 								'walker'         => new Custom_Navwalker(),
 								'menu'           => 'Hauptnavigation',
 								'theme_location' => 'nav-menu-main',
-								'depth'          => 2,
+								'depth'          => 1,
 								'container'      => FALSE,
 								'container_class'   => '',
 								'menu_class'     => '',
@@ -137,8 +137,8 @@
 
 					while ( $loop->have_posts() ) : $loop->the_post();
 
-						$image_smartphone = get_field('image_square');
-						$image_desktop = get_field('image_landscape');
+						$image_smartphone = get_field('header-slider-image-portrait');
+						$image_desktop = get_field('header-slider-image-landscape');
 
 						$image_smartphone_url = $image_smartphone['url'];
 						$image_desktop_url = $image_desktop['url'];
