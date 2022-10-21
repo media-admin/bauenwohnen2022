@@ -122,6 +122,7 @@
 
 	</header>
 
+	<?php if (is_front_page() ) : ?>
 
 		<section class="home-slider-container">
 			<div class="home-slider">
@@ -159,3 +160,4 @@
 			</div>
 		</section>
 
+	<?php endif; ?>

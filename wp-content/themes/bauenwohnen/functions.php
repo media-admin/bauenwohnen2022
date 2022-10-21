@@ -78,28 +78,6 @@ add_filter( 'pre_comment_user_ip', 'buw_replace_comment_ip', 50);
 
 
 
-/* Adding Widget Support */
-/**
-* Register our sidebars and widgetized areas.
-
-function medialab_widgets_init() {
-
-	register_sidebar( array(
-		'name'          => 'Home right sidebar',
-		'id'            => 'home_right_1',
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
-		'after_title'   => '</h2>',
-	) );
-
-}
-
-add_action( 'widgets_init', 'medialab_widgets_init' );
-*/
-
-
-
 /* --- Adds the Slug to the body tag's class --- */
 function buw_add_slug_body_class( $classes ) {
 	 global $post;
@@ -116,11 +94,6 @@ add_filter( 'body_class', 'buw_add_slug_body_class' );
 /* === Styles and Scripts === */
 function buw_register_styles() {
 
-	/* --- Import Cookie Script Stylesheets --- */
-	wp_register_style( 'styles', get_template_directory_uri() . '/styles.c0eb9b412b450fe4bb20.css' );
-	wp_enqueue_style( 'styles' );
-
-
 	/* --- Import Theme Styles via style.css --- */
 	wp_register_style( 'style', get_stylesheet_uri() );
 	wp_enqueue_style( 'style' );
@@ -134,23 +107,23 @@ add_action( 'wp_enqueue_scripts', 'buw_register_styles' );
 function buw_register_scripts() {
 
 	/* --- Import Main Scripts --- */
-	wp_register_script( 'main', get_template_directory_uri() . '/main.c0eb9b412b450fe4bb20.js', '', null, true );
+	wp_register_script( 'main', get_template_directory_uri() . '/assets/scripts/main.js', '', null, true );
 	wp_enqueue_script( 'main' );
 
 	/* --- Import Lightbox Scripts --- */
-	wp_register_script( 'lightbox', get_template_directory_uri() . '/assets/vendor/lightbox2/dist/js/lightbox.js', '', null, true );
+	wp_register_script( 'lightbox', get_template_directory_uri() . '/vendor/lightbox2/dist/js/lightbox.js', '', null, true );
 	wp_enqueue_script( 'lightbox' );
 
 	/* --- Import Slick Scripts --- */
-	wp_register_script( 'slick', get_template_directory_uri() . '/assets/vendor/slick-1.8.1/slick/slick.min.js', '', null, true );
+	wp_register_script( 'slick', get_template_directory_uri() . '/vendor/slick-1.8.1/slick/slick.min.js', '', null, true );
 	wp_enqueue_script( 'slick' );
 
 	/* --- Import Vendors Scripts --- */
-	wp_register_script( 'vendors', get_template_directory_uri() . '/vendors.b86e0341894c80fe39c1.js', '', null, true );
+	wp_register_script( 'vendors', get_template_directory_uri() . '/assets/scripts/vendors.js', '', null, true );
 	wp_enqueue_script( 'vendors' );
 
 	/* --- Import Modal Scripts --- */
-	wp_register_script( 'modal', get_template_directory_uri() . '/modal.86995f46e4f29a4ce8c3.js', '', null, true );
+	wp_register_script( 'modal', get_template_directory_uri() . '/assets/scripts/modal.js', '', null, true );
 	wp_enqueue_script( 'modal' );
 
 	// Import Button Back-to-Top

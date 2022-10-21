@@ -5,8 +5,9 @@
   width: 100%;
   /* min-height: 1.6rem; */
   height: auto;
-  background-color: rgba($brightWhite, 1.00) !important;
-  background-color: #ffffff !important;
+  background-color: rgba(255,255,255,0.80) !important;
+  /* background-color: #ffffff !important; */
+  border-top: 22px solid $mainBlue;
   padding-left: 18px;
   padding-right: 18px;
   padding-bottom: 0.25rem;

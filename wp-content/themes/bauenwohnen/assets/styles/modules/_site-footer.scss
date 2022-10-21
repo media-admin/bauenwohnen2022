@@ -1,0 +1,242 @@
+/* === FOOTER === */
+.site-footer {
+
+	font-size: 0.9rem;
+	line-height: 1.6rem;
+	text-align: center;
+	letter-spacing: 0.05rem;
+	margin-top: 6.0rem;
+
+	@mixin atMedium {
+
+	}
+
+
+
+	&__contact {
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-grow: 0;
+		flex: 1fr 1fr !important;
+		justify-content: space-evenly;
+
+
+		color: $brightWhite;
+
+		background-color: $mainGray;
+		margin: 2.0rem auto;
+
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+
+
+	&__contact-container {
+		position: relative;
+
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+
+
+
+	&__logo-img-container {
+		position: relative;
+
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+
+	&__logo-img {
+		position: relative;
+		width: 300px;
+		height: 300px;
+		border: 1px solid $mainGray;
+		background-color: $brightWhite;
+		margin-top: -20%;
+		padding: 5%;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+
+	&__contact-data {
+		position: relative;
+		width: 100%;
+		text-align: left;
+		font-weight: 300;
+		color: $brightWhite;
+		margin-top: 2.0rem;
+		margin-bottom: 2.0rem;
+		margin-left: -25%;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+	&__contact-data a {
+		font-weight: 600;
+		color: $brightWhite;
+		text-decoration: none;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+
+
+	&__contact-data-phone {
+		position: relative;
+		display: block;
+		font-size: 1.2rem !important;
+		font-weight: 600;
+		color: $brightWhite;
+		text-decoration: none;
+		padding-top: 1.5rem !important;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+	&__contact-data-mail {
+		position: relative;
+		display: block;
+		font-weight: 600;
+		color: $brightWhite;
+		text-decoration: none;
+		padding-bottom: 1.5rem !important;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+	&__contact-social-media-area {
+		position: relative;
+		display: grid;
+		width: 42%;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		list-style-type: none;
+		margin: 2.0rem auto;
+		padding-left: 0;
+
+		@mixin atMedium {
+			width: 12%;
+		}
+
+	}
+
+
+	&__bottom-line {
+		color: $darkGray;
+		background-color: $mainBlue;
+
+		bottom: 0px !important;
+		margin-bottom: 0px !important;
+
+		padding-top: 25px;
+		padding-bottom: 25px;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+
+
+	&__navigation {
+
+		line-height: 1.4rem;
+		color: $darkGray;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+	&__navigation-list {
+		display: inline-flex;
+		list-style-type: none;
+		margin: 2.0rem auto 0.5rem;
+		padding-left: 0;
+
+		@mixin atSmall {
+			display: inherit;
+		}
+
+	}
+
+	&__navigation-list a {
+		color: $darkGray;
+		text-decoration: none;
+		font-size: 1.0rem;
+		font-weight: 600;
+		letter-spacing: 0.15rem;
+		text-transform: uppercase;
+		line-height: 1;
+		border-right: 1px solid $darkGray;
+		padding-right: 0.5rem;
+		padding-left: 0.5rem;
+
+		@mixin atSmall {
+
+		}
+
+	}
+
+
+	&__navigation-list li:last-child a {
+		border-right: none;
+
+		@mixin atSmall {
+
+		}
+
+	}
+
+
+
+
+
+
+	&__copyright {
+		position: relative;
+		width: 60%;
+		font-size: 0.8rem;
+		font-weight: 300;
+		line-height: 1.4rem;
+		margin: 1.0rem auto 1.0rem;
+
+		@mixin atMedium {
+
+		}
+
+	}
+
+}
