@@ -52,10 +52,23 @@
     }
   }
 
+  @media (min-width: 800px) {
+    &__branding {
+      display: inline-flex;
+      width: auto;
+    }
+  }
+
+
+
+
+
+
   &__logo {
     position: relative;
     display: inline-block;
-    padding-top: 18px;
+    padding-top: 0.5rem;
+    padding-top: 0.5rem;
     transition: transform 0.3s ease-out;
 
     @mixin atMedium {

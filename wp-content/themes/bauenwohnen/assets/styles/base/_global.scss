@@ -12,6 +12,7 @@ body {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 16px;
 	color: $mainGray;
+	background-color: $lightGray;
 	margin: 0px;
 	padding: 0px;
 }
@@ -33,10 +34,12 @@ ul.listing {
 }
 
 .site-main {
+
 	z-index: auto;
 }
 
 .site-content {
+
 	margin-top: 250px;
 	padding-top: 60px;
 

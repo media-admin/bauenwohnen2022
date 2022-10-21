@@ -56,6 +56,12 @@
 }
 
 
+
+.home-slider .slick-slider .slick-track {
+  border-bottom: 5px solid $mainBlue;
+}
+
+
 .home-slider .slick-slide {
   padding: 0.0rem;
 }
@@ -94,13 +100,15 @@
 .home-slider__claim {
   position: relative;
   object-fit: initial !important;
-  width: 35% !important;
+  width: 25% !important;
   margin: 0 auto;
   margin-top: -120px;
 }
 
 
+
 .home-slider .slick-dots {
   position: relative;
-  margin-top: 150x;
+
+  padding-top: 5px;
 }

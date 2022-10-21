@@ -1,6 +1,4 @@
-//
 // button-back-to-top.js
-//
 
 jQuery(document).ready(function(){
 
