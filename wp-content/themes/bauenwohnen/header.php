@@ -153,9 +153,15 @@
 						<div class="home-slider__claim-container">
 							<img class="home-slider__claim lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/claim_wohnen-wie-im-urlaub_1-line-negativ.svg" alt="Claim: Wohnen wie im Urlaub">
 						</div>
+
 					</div>
 				<?php endwhile; ?>
 			<?php wp_reset_postdata(); ?>
 			</div>
+			<?php if (is_front_page() ) : ?>
+				<div class="slider-banner">
+					<a class="btn btn--red" href="/wir-suchen-grundstuecke">Wir suchen Grundstücke</a>
+				</div>
+			<?php endif; ?>
 		</section>
 

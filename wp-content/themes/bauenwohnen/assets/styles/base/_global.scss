@@ -12,6 +12,7 @@
 body {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 16px;
+	line-height: 1.0rem;
 	color: $mainGray;
 	background-color: $lightGray;
 	margin: 0px;
@@ -28,6 +29,7 @@ a {
 
 ul {
 	list-style: none;
+	line-height: 1.0rem;
 }
 
 
@@ -269,6 +271,14 @@ img {
 	}
 
 
+	&--red {
+		color: $brightWhite;
+		background-color: $deepRed;
+		margin-top: 2.0rem;
+		margin-bottom: 2.0rem;
+	}
+
+
 	&--white {
 
 		color: $mainBlue;
@@ -287,15 +297,24 @@ img {
 	}
 
 	&--link-button {
-		font-size: 1.2rem;
+		font-size: 1.0rem;
 		font-weight: 300 !important;
 		line-height: 1.8rem;
-		letter-spacing: 0.35rem;
+		letter-spacing: 0.15rem;
 		color: $mainBlue;
 		background-color: transparent;
 		border: 0px !important;
-
 	}
+
+	@media (min-width: 800px) {
+		&--link-button {
+			font-size: 1.2rem;
+			letter-spacing: 0.35rem;
+		}
+	}
+
+
+
 
 	&--link-button:before {
 		content: "";

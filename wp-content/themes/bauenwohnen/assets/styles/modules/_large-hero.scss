@@ -128,3 +128,40 @@
   position: relative;
   padding-top: 5px;
 }
+
+
+.slider-banner {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .slider-banner {
+    position: absolute;
+    bottom: -20px;
+    right: 50px;
+  }
+}
+
+
+.slider-banner .btn--red {
+  width: 80%;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.15rem;
+}
+
+@media (min-width: 800px) {
+  .slider-banner .btn--red {
+    width: inherit;
+  }
+}
+
+
+.slider-banner a {
+
+}
+
+

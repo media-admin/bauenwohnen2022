@@ -175,6 +175,7 @@
 body {
   font-family: "Titillium Web", sans-serif;
   font-size: 16px;
+  line-height: 1rem;
   color: #707070;
   background-color: #F8F5F5;
   margin: 0px;
@@ -189,6 +190,7 @@ a {
 
 ul {
   list-style: none;
+  line-height: 1rem;
 }
 
 ul.listing {
@@ -393,6 +395,12 @@ img {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.btn--red {
+  color: #ffffff;
+  background-color: #B70000;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .btn--white {
   color: #001C37;
   background-color: #ffffff;
@@ -407,13 +415,19 @@ img {
   margin-bottom: 3rem;
 }
 .btn--link-button {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300 !important;
   line-height: 1.8rem;
-  letter-spacing: 0.35rem;
+  letter-spacing: 0.15rem;
   color: #001C37;
   background-color: transparent;
   border: 0px !important;
+}
+@media (min-width: 800px) {
+  .btn--link-button {
+    font-size: 1.2rem;
+    letter-spacing: 0.35rem;
+  }
 }
 .btn--link-button:before {
   content: "";
@@ -508,6 +522,10 @@ table {
 }
 
 /* === Heading Styles === */
+.home .h1__title {
+  display: none;
+}
+
 .h1__title {
   color: #001C37;
   font-size: 1.8rem;
@@ -1248,6 +1266,32 @@ menu.site-menu {
   padding-top: 5px;
 }
 
+.slider-banner {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .slider-banner {
+    position: absolute;
+    bottom: -20px;
+    right: 50px;
+  }
+}
+.slider-banner .btn--red {
+  width: 80%;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.15rem;
+}
+
+@media (min-width: 800px) {
+  .slider-banner .btn--red {
+    width: inherit;
+  }
+}
 /* === SLICK SLIDER === */
 /* --- Slick General --- */
 .slick-slider {
@@ -1768,10 +1812,16 @@ menu.site-menu {
   margin: 1.5rem auto;
 }
 
+.wpcf7-list-item-label {
+  line-height: 1.4rem;
+  padding-top: 0.25rem;
+}
+
 .contact-form-section__form-item-property {
   position: relative;
   display: block;
   width: 100%;
+  line-height: 1.4rem;
   color: #707070 !important;
   background-color: transparent;
   box-shadow: none;
@@ -1791,6 +1841,7 @@ menu.site-menu {
   position: relative;
   display: block;
   width: 100%;
+  line-height: 1.4rem;
   color: #707070 !important;
   background-color: transparent;
   box-shadow: none;
@@ -1812,6 +1863,11 @@ menu.site-menu {
 
 .contact-form-section__form-label-dsgvo-acceptance {
   padding-left: -10px;
+  line-height: 1.4rem;
+}
+
+.contact-form-section__form-item-dsgvo-checkbox {
+  line-height: 1.4rem;
 }
 
 .contact-form-section input[type=checkbox] {
@@ -1819,6 +1875,7 @@ menu.site-menu {
   left: 0.5rem;
   top: -2px;
   vertical-align: baseline;
+  line-height: 1.4rem;
   margin-top: -2px !important;
   z-index: 0;
   -webkit-appearance: none;
@@ -1862,6 +1919,7 @@ menu.site-menu {
   position: relative;
   width: 100%;
   font-size: 1rem;
+  line-height: 1.6rem;
   font-weight: 500;
   color: #ffffff;
   background-color: transparent !important;
@@ -1908,22 +1966,33 @@ menu.site-menu {
   width: -moz-fit-content;
   width: fit-content;
   display: block;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
   text-align: center;
   color: #ffffff !important;
   text-decoration: none !important;
   background-color: #001C37;
-  margin-top: 3.5rem !important;
-  padding: 1rem 1.5rem !important;
+  margin-top: 2.5rem !important;
+  padding: 0.5rem 1.5rem !important;
 }
 
+@media (min-width: 800px) {
+  .contact-form-section__btn {
+    font-size: 1.4rem;
+    margin-top: 3.5rem !important;
+    padding: 1rem 1.5rem !important;
+  }
+}
 .section-difference {
   color: #ffffff !important;
   background: #001C37 url("../images/logos/signet-buw-negativ.svg") no-repeat;
   background-size: contain !important;
   background-position: bottom center;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 6rem;
 }
 
 .section-difference h2 {
@@ -1962,6 +2031,21 @@ menu.site-menu {
   padding-left: 4rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.overview-sizes {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.overview-sizes figcaption {
+  position: relative;
+  top: -50px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .modal {
