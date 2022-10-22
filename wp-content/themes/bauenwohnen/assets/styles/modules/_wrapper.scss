@@ -2,11 +2,27 @@
 	padding-left: 18px;
 	padding-right: 18px;
 
+
 	&--medium {
 		max-width: 976px;
 	}
 
+
 	&--narrow {
 		max-width: 470px;
 	}
+}
+
+
+.content-wrapper {
+	margin-left: 18px;
+	margin-right: 18px;
+}
+
+
+.fullwith-wrapper {
+	width: 100vw;
+	margin-left: -18px;
+	padding-left: 36px !important;
+	padding-right: 36px !important;
 }

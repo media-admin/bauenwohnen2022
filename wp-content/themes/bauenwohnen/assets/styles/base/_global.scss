@@ -8,6 +8,7 @@
 	padding: 0px;
 }
 
+
 body {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 16px;
@@ -17,15 +18,18 @@ body {
 	padding: 0px;
 }
 
+
 a {
 	color: $mainGray;
 	font-weight: 600;
 	text-decoration: none;
 }
 
+
 ul {
 	list-style: none;
 }
+
 
 ul.listing {
 	padding-left: 1.5rem;
@@ -33,21 +37,29 @@ ul.listing {
 	margin-bottom: 1.5rem;
 }
 
-.site-main {
 
+.site-main {
+	position: relative;
+	display: block;
+	width: 100%;
 	z-index: auto;
 }
 
+
 .site-content {
-
-	margin-top: 250px;
-	padding-top: 60px;
-
-	@mixin atMedium {
-		padding-top: 60px;
-	}
-
+	position: relative;
+	display: block;
+	width: 100%;
+	z-index: auto;
+	padding-top: 0px;
 }
+
+@media (min-width: 800px) {
+	.site-content {
+		padding-top: 0px;
+	}
+}
+
 
 .site-intro {
 
@@ -69,13 +81,17 @@ ul.listing {
 	overflow: hidden !important;
 }
 
+
 .box--left-aligned article {
 	position: relative;
 	width: 75%;
-	margin-left: 0;
-	margin-right: auto;
+	text-align: left;
+	margin: auto;
+	margin-top: 3.0rem;
+	margin-bottom: 3.0rem;
 	overflow: hidden !important;
 }
+
 
 .box--right-aligned {
 	position: relative;
@@ -89,6 +105,7 @@ ul.listing {
 	padding: 0;
 	overflow: hidden !important;
 }
+
 
 .box--right-aligned article {
 	position: relative;
@@ -124,13 +141,8 @@ img {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 	overflow: hidden;
-
-
-	@mixin atMedium {
-
-	}
-
 }
+
 
 .img--centered {
 	position: relative;
@@ -140,12 +152,8 @@ img {
 	object-fit: cover;
 	margin: 0 auto !important;
 	overflow: hidden !important;
-
-	@mixin atMedium {
-
-	}
-
 }
+
 
 .img--left-aligned {
 	position: relative;
@@ -157,12 +165,8 @@ img {
 	margin: 2.0rem 0;
 	margin-left: -36px !important;
 	padding: 0;
-
-	@mixin atMedium {
-
-	}
-
 }
+
 
 .img--right-aligned {
 	position: relative;
@@ -173,12 +177,15 @@ img {
 	margin: 2.0rem 0;
 	margin-right: -36px !important;
 	padding: 0;
-
-	@mixin atMedium {
-
-	}
-
 }
+
+
+.claim-image {
+	position: relative;
+	display: block;
+}
+
+
 
 
 
@@ -195,12 +202,8 @@ img {
 	margin-left: -1.1rem !important;
 	margin-bottom: -5.0rem;
 	padding: 0;
-
-	@mixin atMedium {
-
-	}
-
 }
+
 
 .img--project-overview-right-aligned {
 	position: relative;
@@ -212,12 +215,8 @@ img {
 	margin-right: -1.1rem !important;
 	margin-bottom: -5.0rem;
 	padding: 0;
-
-	@mixin atMedium {
-
-	}
-
 }
+
 
 .img--project-main {
 	position: relative;
@@ -227,40 +226,27 @@ img {
 	object-fit: cover;
 	margin: 2.0rem -1.0rem;
 	padding: 0;
-
-	@mixin atMedium {
-
-	}
-
 }
+
 
 .gallery--project-img {
 	width: calc(100% + 2.0rem) !important;
 	object-fit: cover;
-
-	@mixin atMedium {
-
-	}
-
 }
+
 
 .gallery--project-img img {
 	width: calc(100% + 2.0rem) !important;
 	object-fit: cover;
 	margin: 2.0rem auto;
-
-	@mixin atMedium {
-
-	}
-
 }
 
 
-
-
-
-
 /* === Button Styles === */
+
+.wp-block-button__link {
+	background-color: transparent !important;
+}
 
 .btn {
 	position: relative;
@@ -268,44 +254,28 @@ img {
 	font-size: 0.9rem;
 	font-weight: 700;
 	line-height: 1.4rem;
-
-	text-transform: lowercase;
+	text-transform: uppercase;
 	text-decoration: none;
 	border: none;
 	margin-bottom: 2.0rem;
-
 	padding: 1rem 1.5rem !important;
 
-	@mixin atMedium {
-
-	}
 
 	&--blue {
-
 		color: $brightWhite;
 		background-color: $mainBlue;
-
 		margin-top: 2.0rem;
 		margin-bottom: 2.0rem;
-
-		@mixin atMedium {
-
-		}
-
 	}
+
 
 	&--white {
 
 		color: $mainBlue;
 		background-color: $brightWhite;
 		margin: 1.25rem 0;
-
-
-		@mixin atMedium {
-
-		}
-
 	}
+
 
 	&--centered-aligned {
 		position: relative;
@@ -314,12 +284,34 @@ img {
 		margin: 0 auto;
 		margin-top: 2.0rem;
 		margin-bottom: 3.0rem;
+	}
 
-		@mixin atMedium {
-
-		}
+	&--link-button {
+		font-size: 1.2rem;
+		font-weight: 300 !important;
+		line-height: 1.8rem;
+		letter-spacing: 0.35rem;
+		color: $mainBlue;
+		background-color: transparent;
+		border: 0px !important;
 
 	}
+
+	&--link-button:before {
+		content: "";
+		display: inline-block;
+		background: url('../icons/button-arrow.svg') no-repeat;
+		width: 18px;
+		height: 18px;
+		line-height: 24px;
+		background-size: cover !important;
+	}
+
+	&--link-button .wp-block-button__link {
+		padding: 0.0rem 0.5rem !important;
+		padding-left: -20px !important;
+	}
+
 
 }
 

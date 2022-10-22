@@ -1,0 +1,354 @@
+/* === CONTACT FORMS === */
+
+.contact-form-section {
+	position: relative;
+	width: 100%;
+	color: $mainGray;
+	background-color: $brightWhite;
+	margin: 0px 0px;
+	padding: 4.5rem 0.25rem;
+}
+
+.contact-form-section__container {
+	position: relative;
+	width: 90%;
+	background-color: $brightWhite;
+	padding: 4.5rem 0.25rem;
+}
+
+.contact-form-section__title {
+	font-size: 1.6rem;
+	line-height: 1.8rem;
+	margin-bottom: 0.5rem;
+}
+
+.contact-form-section__text {
+	font-size: 1.0rem;
+	font-weight: 400;
+}
+
+.contact-form-section a {
+	color: $mainBlue;
+	font-weight: 700;
+}
+
+.contact-form-section__form {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: $brightWhite;
+	padding: 1.0rem;
+}
+
+@media (min-width: 800px) {
+	.contact-form-section__form {
+		padding: 2.5rem;
+	}
+}
+
+
+
+
+
+.contact-form-section__form ::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-weight: 100;
+	font-size: 0.8rem;
+	color: $mainGray;
+	opacity: 0.7; /* Firefox */
+}
+
+.contact-form-section__form :-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-weight: 100;
+	font-size: 0.8rem;
+	color: $mainGray;
+	opacity: 0.7; /* Firefox */
+}
+
+.contact-form-section__form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-weight: 100;
+	font-size: 0.8rem;
+	color: $mainGray;
+	opacity: 0.7; /* Firefox */
+}
+
+.contact-form-section__form input:focus {
+	 outline: none;
+}
+
+
+.contact-form-section__form > div.column--half {
+	flex: 100%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+	padding: 0.25rem;
+}
+
+@media (min-width: 800px) {
+	.contact-form-section__form > div.column--half {
+		flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+		padding: 1.0rem;
+	}
+}
+
+
+.contact-form-section__form > div.column--full {
+	flex: 100%;
+	padding: 0.25rem;
+}
+
+@media (min-width: 800px) {
+	.contact-form-section__form > div.column--half {
+		padding: 0.5rem;
+	}
+}
+
+
+
+
+.contact-form-section__form-item {
+	position: relative;
+	width: 100%;
+	color: $mainGray !important;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	padding: 0.25rem;
+	border-bottom: 2px solid $mainBlue;
+	padding-bottom: 0.5rem;
+	margin: 1.5rem auto;
+}
+
+
+
+
+
+
+.contact-form-section__form-label-firstname {
+}
+
+.contact-form-section__form-item-firstname {
+}
+
+
+
+.contact-form-section__form-label-lastname {
+}
+
+.contact-form-section__form-item-lastname {
+}
+
+
+
+.contact-form-section__form-label-email {
+}
+
+.contact-form-section__form-item-email {
+}
+
+
+.contact-form-section__form-label-phone {
+}
+
+.contact-form-section__form-item-phone {
+}
+
+
+.contact-form-section__form-label-zip {
+}
+
+.contact-form-section__form-item-zip {
+}
+
+
+.contact-form-section__form-label-city {
+}
+
+.contact-form-section__form-item-city {
+}
+
+
+
+.contact-form-section__form-label-street {
+}
+
+.contact-form-section__form-item-street {
+}
+
+
+
+.contact-form-section__form-label-property {
+}
+
+.contact-form-section__form-item-property {
+	position: relative;
+	display: block;
+	width: 100%;
+	color: $mainGray !important;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	padding: 0.25rem;
+	border-bottom: 2px solid $mainBlue;
+	padding-bottom: 1.5rem;
+	margin: 1.5rem auto;
+}
+
+
+.contact-form-section__form-item-property .wpcf7-list-item {
+	margin-left: 0.0rem;
+	margin-right: 2.0rem;
+}
+
+
+.contact-form-section__form-item-intrested-in {
+	position: relative;
+	display: block;
+	width: 100%;
+	color: $mainGray !important;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	padding: 0.25rem;
+	border-bottom: 2px solid $mainBlue;
+	padding-bottom: 1.5rem;
+	margin: 1.5rem auto;
+}
+
+
+.contact-form-section__form-item-intrested-in .wpcf7-list-item {
+	margin-left: 0.0rem;
+	margin-right: 2.0rem;
+}
+
+
+.contact-form-section__form-label-message {
+}
+
+.contact-form-section__form-item-message {
+	min-height: 100px;
+}
+
+
+.contact-form-section__form-label-dsgvo-acceptance {
+	padding-left: -10px;
+}
+
+
+.contact-form-section__form-item-dsgvo-checkbox {
+}
+
+
+.contact-form-section__btn {
+}
+
+
+.contact-form-section input[type="checkbox"] {
+	position: relative;
+	left: 0.5rem;
+	top: -2px;
+	vertical-align: baseline;
+	margin-top: -2px !important;
+	z-index: 0;
+	-webkit-appearance: none;
+}
+
+
+.contact-form-section input[type="checkbox"]::before {
+	width: 12px;
+	height: 12px;
+	border-radius: 0;
+	border: 2px solid $mainBlue  !important;
+	background-color: transparent !important;
+	display: block;
+	content: "";
+	float: left !important;
+	margin-right: 15px !important;
+	left: -.25rem !important;
+	z-index: 5 !important;
+	position: relative;
+}
+
+
+.contact-form-section input[type="checkbox"]:checked:after {
+	content: "";
+	display: block;
+	width: 4px !important;
+	height: 10px!important;
+	border: solid $mainBlue !important;
+	border-width: 0 2px 2px 0 !important;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 0px !important;
+	left: -1px !important;
+	margin-left: 2px !important;
+}
+
+
+.contact-form-section__form-label-topic {
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+
+
+.contact-form-section select {
+	position: relative;
+	width: 100%;
+	font-size: 1.0rem;
+	font-weight: 500;
+	color: $brightWhite;
+	background-color: transparent !important;
+	border: 2px solid $brightWhite !important;
+	padding: 0.25rem 0.5rem;
+}
+
+
+.contact-form-section select:focus-visible {
+	font-weight: 300 !important;
+	color: $mainBlue;
+	background-color: $brightWhite !important;
+	border: 2px solid $mainBlue  !important;
+	outline-style: none;
+}
+
+
+.contact-form-section__form-item-dsgvo-acceptance {
+	position: absolute;
+	display: inline-block;
+	width: 92%;
+	font-weight: 400;
+	font-size: 1.0rem;
+	line-height: 1.6rem;
+	opacity: 1.0; /* Firefox */
+	margin-top: -0.25rem;
+	padding-left: 0.75rem;
+}
+
+
+.wpcf7-form-control .wpcf7-acceptance {
+	line-height: 1.6rem;
+	padding-left: 0.25rem;
+}
+
+
+.contact-form-section__form-item-dsgvo-acceptance a {
+	font-weight: 500;
+	font-size: 1.0rem;
+	line-height: 1.6rem;
+	opacity: 1.0; /* Firefox */
+	text-decoration: none;
+}
+
+.contact-form-section__btn {
+	position: relative !important;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 300;
+	letter-spacing: 0.2rem;
+	text-align: center;
+	color: $brightWhite !important;
+	text-decoration: none !important;
+	background-color: $mainBlue;
+	margin-top: 3.5rem !important;
+	padding: 1rem 1.5rem !important;
+}

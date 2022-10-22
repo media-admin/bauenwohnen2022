@@ -5,14 +5,17 @@
 	margin-top: 4.0rem !important;
 }
 
+
 /* --- Highlighted Text --- */
 .letter-colored--red {
 	color: $mainBlue;
 }
 
+
 .text--underlined {
 	text-decoration: underline;
 }
+
 
 .highlight-me {
 	background-color: $mainBlue;
@@ -44,7 +47,33 @@ article p {
 /* --- List Styles --- */
 ul {
 	list-style-type: square;
-	color: #707173;
+	color: $mainGray;
+	line-height: 1.8rem;
+}
+
+
+ul li {
+	margin-left: 1.5rem;
+}
+
+
+ol {
+	list-style-type: square;
+	color: $mainGray;
+	line-height: 1.8rem;
+}
+
+
+ol li {
+	margin-left: 1.5rem;
+}
+
+
+
+/* --- Table Styles --- */
+table {
+	color: $mainGray;
+	line-height: 1.8rem;
 }
 
 
@@ -54,14 +83,22 @@ ul {
 
 	&__title {
 		color: $mainBlue;
-		font-size: 3.0rem;
-		font-weight: 300;
-		line-height: 3.0rem;
+		font-size: 1.8rem;
+		font-weight: 100;
+		line-height: 2.4rem;
 		text-transform: uppercase;
 		letter-spacing: 0.10rem;
 		margin: 1.0rem 0;
 		padding-left: 1.0rem;
 	}
+
+	@media (min-width: 800px) {
+		&__title {
+			font-size: 3.4rem;
+			line-height: 4.2rem;
+		}
+	}
+
 
 	&__title--left-aligned {
 		text-align: left;
@@ -69,11 +106,13 @@ ul {
 		padding-left: 1.0rem;
 	}
 
+
 	&__title--right-aligned {
 		text-align: right;
 		text-transform: uppercase;
 		padding-right: 1.0rem;
 	}
+
 
 	&__subtitle {
 		font-size: 1.0rem;
@@ -87,11 +126,13 @@ ul {
 		margin-bottom: 2.0rem;
 	}
 
+
 	&__subtitle--left-aligned {
 		text-align: left;
 		text-transform: uppercase;
 		padding-left: 1.0rem;
 	}
+
 
 	&__subtitle--right-aligned {
 		text-align: right;
@@ -102,13 +143,57 @@ ul {
 
 
 
+
+h2 {
+	font-size: 1.8rem;
+	line-height: 2.6rem;
+	font-weight: 100;
+	margin-top: 2.0rem;
+	margin-bottom: 0.5rem;
+
+	color: $mainBlue;
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 2.4rem;
+	text-transform: uppercase;
+	letter-spacing: 0.10rem;
+
+}
+
+@media (min-width: 800px) {
+	h2 {
+		font-size: 2.2rem;
+		line-height: 2.8rem;
+
+		font-size: 2.8rem;
+		line-height: 3.6rem;
+	}
+}
+
+
+h3 {
+	font-size: 1.6rem;
+	line-height: 2.0rem;
+	font-weight: 400;
+	margin-top: 1.5rem;
+	margin-bottom: 0.25rem;
+}
+
+@media (min-width: 800px) {
+	h3 {
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+	}
+}
+
+
 .h2 {
 
 	&__heading {
 		color: $mainBlue;
-		font-size: 2.2rem;
-		font-weight: 700;
+		font-size: 1.8rem;
 		line-height: 2.6rem;
+		font-weight: 100;
 		letter-spacing: 0.1rem;
 		text-transform: uppercase;
 		margin: 0;
@@ -117,6 +202,14 @@ ul {
 		padding-bottom: 1.0rem;
 	}
 
+	@media (min-width: 800px) {
+		&__heading {
+			font-size: 2.2rem;
+			line-height: 2.6rem;
+		}
+	}
+
+
 	&__heading--left-aligned {
 		text-align: left !important;
 		text-transform: uppercase;
@@ -124,12 +217,14 @@ ul {
 		padding-right: 25%;
 	}
 
+
 	&__heading--right-aligned {
 		text-align: right !important;
 		text-transform: uppercase;
 		padding-right: 0.25rem;
 		padding-left: 25%;
 	}
+
 
 	&__subheading {
 		font-size: 1.0rem;
@@ -143,6 +238,7 @@ ul {
 		margin-bottom: 1.0rem;
 	}
 
+
 	&__subheading--left-aligned {
 		text-align: left !important;
 		text-transform: uppercase;
@@ -150,12 +246,14 @@ ul {
 		padding-right: 25%;
 	}
 
+
 	&__subheading--right-aligned {
 		text-align: right !important;
 		text-transform: uppercase;
 		padding-right: 0.25rem;
 		padding-left: 25%;
 	}
+
 
 	&__title {
 		text-transform: uppercase;
@@ -188,5 +286,3 @@ ul {
 	color: $mainBlue;
 	margin: 0;
 }
-
-

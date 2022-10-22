@@ -1,0 +1,10 @@
+<svg id="Gruppe_50" data-name="Gruppe 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.457" height="26.426" viewBox="0 0 25.457 26.426">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rechteck_46" data-name="Rechteck 46" width="25.457" height="26.426" fill="#001c37"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_48" data-name="Gruppe 48" clip-path="url(#clip-path)">
+    <path id="Pfad_2" data-name="Pfad 2" d="M12.517,25.282A12.331,12.331,0,1,1,24.849,12.953,12.326,12.326,0,0,1,12.517,25.282Zm0-2.387a9.944,9.944,0,1,0-9.943-9.943A9.942,9.942,0,0,0,12.517,22.9ZM6.153,11.958a.6.6,0,0,1,.6-.6h5.768V8.029a.6.6,0,0,1,1.018-.422l4.924,4.922a.6.6,0,0,1,0,.846L13.536,18.3a.6.6,0,0,1-1.018-.422V14.544H6.749a.6.6,0,0,1-.6-.6Z" transform="translate(0.211 0.696)" fill="#001c37"/>
+  </g>
+</svg>

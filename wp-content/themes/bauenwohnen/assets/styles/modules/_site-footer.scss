@@ -1,108 +1,102 @@
 /* === FOOTER === */
 .site-footer {
-
+	position: relative;
+	display: block;
 	font-size: 0.9rem;
 	line-height: 1.6rem;
 	text-align: center;
 	letter-spacing: 0.05rem;
 	margin-top: 6.0rem;
 
-	@mixin atMedium {
-		background-color: red !important;
-	}
-
-
 
 	&__contact {
 		position: relative;
 		width: 100%;
-		display: flex;
-		flex-grow: 0;
-		flex: 1fr 1fr !important;
-		justify-content: space-evenly;
-
-
+		display: block;
 		color: $brightWhite;
-
 		background-color: $mainGray;
 		margin: 2.0rem auto;
-
-
-		@mixin atMedium {
-
-		}
-
 	}
 
+	@media (min-width: 800px) {
+		&__contact {
+			display: flex;
+			flex-grow: 0;
+			flex: 1fr 1fr !important;
+			justify-content: space-evenly;
+		}
+	}
 
 
 	&__contact-container {
 		position: relative;
-
-
-		@mixin atMedium {
-
-		}
-
+		display: block;
 	}
 
-
+	@media (min-width: 800px) {
+		&__contact-container {
+			display: inherit;
+		}
+	}
 
 
 	&__logo-img-container {
 		position: relative;
+		display: block;
+	}
 
 
-		@mixin atMedium {
-
+	@media (min-width: 800px) {
+		&__logo-img-container {
+			display: inherit;
 		}
-
 	}
 
 
 	&__logo-img {
 		position: relative;
-		width: 300px;
-		height: 300px;
+		width: 250px;
+		height: 250px;
 		border: 1px solid $mainGray;
 		background-color: $brightWhite;
 		margin-top: -20%;
 		padding: 5%;
+	}
 
-		@mixin atMedium {
-
+	@media (min-width: 800px) {
+		&__logo-img {
+			width: 300px;
+			height: 300px;
 		}
-
 	}
 
 
 	&__contact-data {
 		position: relative;
 		width: 100%;
-		text-align: left;
+		font-size: 1.0rem;
 		font-weight: 300;
+		text-align: center;
 		color: $brightWhite;
-		margin-top: 2.0rem;
-		margin-bottom: 2.0rem;
-		margin-left: -25%;
-
-		@mixin atMedium {
-
-		}
-
+		margin: 2.0rem auto;
+		padding-bottom: 2.0rem;
 	}
+
+	@media (min-width: 800px) {
+		&__contact-data {
+			width: 100%;
+			text-align: left;
+			margin-left: -25%;
+			padding-bottom: 1.0rem;
+		}
+	}
+
 
 	&__contact-data a {
 		font-weight: 600;
 		color: $brightWhite;
 		text-decoration: none;
-
-		@mixin atMedium {
-
-		}
-
 	}
-
 
 
 	&__contact-data-phone {
@@ -113,12 +107,8 @@
 		color: $brightWhite;
 		text-decoration: none;
 		padding-top: 1.5rem !important;
-
-		@mixin atMedium {
-
-		}
-
 	}
+
 
 	&__contact-data-mail {
 		position: relative;
@@ -127,12 +117,8 @@
 		color: $brightWhite;
 		text-decoration: none;
 		padding-bottom: 1.5rem !important;
-
-		@mixin atMedium {
-
-		}
-
 	}
+
 
 	&__contact-social-media-area {
 		position: relative;
@@ -143,54 +129,51 @@
 		list-style-type: none;
 		margin: 2.0rem auto;
 		padding-left: 0;
+	}
 
-		@mixin atMedium {
+	@media (min-width: 800px) {
+		&__contact-social-media-area {
 			width: 12%;
 		}
-
 	}
 
 
 	&__bottom-line {
 		color: $darkGray;
 		background-color: $mainBlue;
-
 		bottom: 0px !important;
 		margin-bottom: 0px !important;
-
 		padding-top: 25px;
 		padding-bottom: 25px;
-
-		@mixin atMedium {
-
-		}
-
 	}
-
 
 
 	&__navigation {
-
 		line-height: 1.4rem;
 		color: $darkGray;
-
-		@mixin atMedium {
-
-		}
-
 	}
+
 
 	&__navigation-list {
 		display: inline-flex;
 		list-style-type: none;
 		margin: 2.0rem auto 0.5rem;
 		padding-left: 0;
+	}
 
-		@mixin atSmall {
-			display: inherit;
+	@media (min-width: 800px) {
+		&__navigation-list {
+			display: inline-flex;
+
 		}
 
 	}
+
+
+	&__navigation-list li {
+		margin-left: inherit;
+	}
+
 
 	&__navigation-list a {
 		color: $darkGray;
@@ -203,40 +186,21 @@
 		border-right: 1px solid $darkGray;
 		padding-right: 0.5rem;
 		padding-left: 0.5rem;
-
-		@mixin atSmall {
-
-		}
-
 	}
 
 
 	&__navigation-list li:last-child a {
 		border-right: none;
-
-		@mixin atSmall {
-
-		}
-
 	}
-
-
-
-
 
 
 	&__copyright {
 		position: relative;
-		width: 60%;
+		width: 90%;
 		font-size: 0.8rem;
 		font-weight: 300;
 		line-height: 1.4rem;
 		margin: 1.0rem auto 1.0rem;
-
-		@mixin atMedium {
-
-		}
-
 	}
 
 }
