@@ -1222,7 +1222,9 @@ menu.site-menu {
 @media (min-width: 800px) {
   .home-slider .slick-list {
     max-height: 750px;
-    border-bottom: 5px solid #001C37;
+    /*
+    border-bottom: 5px solid $mainBlue;
+    */
   }
 }
 .home-slider .slick-slide {
@@ -1258,14 +1260,13 @@ menu.site-menu {
 .home-slider__claim-container {
   position: relative;
   width: 100% !important;
-  border-bottom: 3px solid #001C37;
+  /* border-bottom: 3px solid $mainBlue; */
   z-index: 1;
 }
 
 @media (min-width: 800px) {
   .home-slider__claim-container {
     position: relative;
-    border-bottom: 5px solid #001C37;
   }
 }
 .home-slider .slick-slide img.home-slider__claim {

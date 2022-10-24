@@ -49,10 +49,6 @@
 }
 
 
-
-
-
-
 .home-slider {
   width: 100vw !important;
   width: 100% !important;
@@ -69,7 +65,9 @@
 @media (min-width: 800px) {
   .home-slider .slick-list {
     max-height: 750px;
+    /*
     border-bottom: 5px solid $mainBlue;
+    */
   }
 }
 
@@ -110,14 +108,13 @@
 .home-slider__claim-container {
   position: relative;
   width: 100% !important;
-  border-bottom: 3px solid $mainBlue;
+  /* border-bottom: 3px solid $mainBlue; */
   z-index: 1;
 }
 
 @media (min-width: 800px) {
   .home-slider__claim-container {
     position: relative;
-    border-bottom: 5px solid $mainBlue;
   }
 }
 
