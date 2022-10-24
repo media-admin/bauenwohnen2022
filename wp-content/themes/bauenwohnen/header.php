@@ -137,7 +137,12 @@
 						$image_smartphone = get_field('header-slider-image-portrait');
 						$image_desktop = get_field('header-slider-image-landscape');
 
-						$image_smartphone_url = $image_smartphone['url'];
+						if ( $image_smartphone ) {
+							$image_smartphone_url = $image_smartphone['url'];
+						} else {
+							$image_smartphone_url = $image_desktop['url'];
+						}
+
 						$image_desktop_url = $image_desktop['url'];
 					?>
 

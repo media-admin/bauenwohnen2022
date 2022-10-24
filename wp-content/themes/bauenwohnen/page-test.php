@@ -64,8 +64,8 @@ get_header( '' );
 						</div>
 
 						<div class="column--full">
-							<label class="contact-form-section__form-label-property">Ich biete<sup>*</sup>
-							[checkbox* property use_label_element class:contact-form-section__form-item-property "Grundstück 500m" "Grundstück 750m" "Grundstück 1000m" ]
+							<label class="contact-form-section__form-label-interested-in">Ich biete<sup>*</sup>
+							[checkbox* property use_label_element class:contact-form-section__form-item-intrested-in "Grundstück 500m" "Grundstück 750m" "Grundstück 1000m" ]
 							</label>
 						</div>
 
