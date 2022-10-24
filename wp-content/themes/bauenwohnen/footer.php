@@ -43,7 +43,7 @@
 				</ul>
 			</nav>
 
-			<p class="site-footer__copyright">©&nbsp;2022 by Bauen & Wohnen Wohnbaugruppe GmbH. Alle Rechte vorbehalten.</p>
+			<p class="site-footer__copyright">©&nbsp;2022 by Bauen & Wohnen Wohnbau GmbH. Alle Rechte vorbehalten.</p>
 
 		</section>
 

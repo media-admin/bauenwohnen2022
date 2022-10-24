@@ -118,9 +118,7 @@
 
 			</nav>
 
-		</div>
-
-	</header>
+		</header>
 
 
 		<section class="home-slider-container">
@@ -147,13 +145,12 @@
 						<picture>
 							<source media="(min-width: 38em)" srcset=" <?php echo esc_url($image_desktop_url); ?> ">
 							<source srcset=" <?php echo esc_url($image_smartphone_url); ?> ">
-							<img src=" <?php echo esc_url($image_smartphone_url); ?> ">
+							<img src=" <?php echo esc_url($image_desktop_url); ?> ">
 						</picture>
 						<p class="home-slider__text"><?php the_content();?>
 						<div class="home-slider__claim-container">
-							<img class="home-slider__claim lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/claim_wohnen-wie-im-urlaub_1-line-negativ.svg" alt="Claim: Wohnen wie im Urlaub">
+							<img class="home-slider__claim lazyload" src="<?php bloginfo( 'template_directory' ); ?>/assets/images/logos/claim_wohnen-wie-im-urlaub-seit-1992_2-lines-negativ.svg" alt="Claim: Wohnen wie im Urlaub">
 						</div>
-
 					</div>
 				<?php endwhile; ?>
 			<?php wp_reset_postdata(); ?>

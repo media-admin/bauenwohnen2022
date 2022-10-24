@@ -791,8 +791,10 @@ menu.site-menu {
     display: inline-flex;
     width: 100%;
     justify-content: normal;
+    /*
     margin-left: 15px;
     margin-right: 15px;
+    */
   }
 }
 .navbar a {
@@ -855,7 +857,7 @@ menu.site-menu {
     /* margin-top: 1.0rem; */
     margin-bottom: 1rem;
     padding-top: 5px;
-    padding-left: 40px;
+    /* padding-left: 40px */
   }
 }
 .navbar__navigation-list li {
@@ -887,6 +889,11 @@ menu.site-menu {
     color: #898D9A;
     text-decoration: none;
     padding-top: 2.2rem;
+  }
+}
+@media (min-width: 800px) {
+  .navbar__navigation-list li a:hover {
+    color: #001C37;
   }
 }
 /* --- Submenu ---

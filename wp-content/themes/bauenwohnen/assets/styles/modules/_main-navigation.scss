@@ -40,8 +40,10 @@ menu.site-menu {
     display: inline-flex;
     width: 100%;
     justify-content: normal;
+    /*
     margin-left: 15px;
     margin-right: 15px;
+    */
   }
 }
 
@@ -110,7 +112,7 @@ menu.site-menu {
     /* margin-top: 1.0rem; */
     margin-bottom: 1.0rem;
     padding-top: 5px;
-    padding-left: 40px;
+    /* padding-left: 40px */;
   }
 }
 
@@ -154,7 +156,11 @@ menu.site-menu {
 }
 
 
-
+@media (min-width: 800px) {
+  .navbar__navigation-list li a:hover {
+    color: $mainBlue;
+  }
+}
 
 
 
