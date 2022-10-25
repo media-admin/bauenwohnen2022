@@ -1,130 +1,21 @@
 <?php
 
-function shortcode_just_call() {
+function shortcode_google_maps() {
 	ob_start();
-	get_template_part( 'shortcodes/shortcode_just-call');
+	get_template_part( 'shortcodes/shortcode_google-maps');
 	return ob_get_clean();
 }
 
-add_shortcode( 'shortcode_just_call', 'shortcode_just_call' );
+add_shortcode( 'shortcode_google_maps', 'shortcode_google_maps' );
 
 
-function shortcode_recall() {
+function shortcode_youtube_video() {
 	ob_start();
-	get_template_part( 'shortcodes/shortcode_recall');
+	get_template_part( 'shortcodes/shortcode_youtube-video');
 	return ob_get_clean();
 }
 
-add_shortcode( 'shortcode_recall', 'shortcode_recall' );
-
-
-function shortcode_contact_form() {
-	ob_start();
-	get_template_part( 'shortcodes/shortcode_contact-form');
-	return ob_get_clean();
-}
-
-add_shortcode( 'shortcode_contact_form', 'shortcode_contact_form' );
-
-
-function shortcode_special_question() {
-	ob_start();
-	get_template_part( 'shortcodes/shortcode_special-question');
-	return ob_get_clean();
-}
-
-add_shortcode( 'shortcode_special_question', 'shortcode_special_question' );
-
-
-function shortcode_our_values() {
-	ob_start();
-	get_template_part( 'shortcodes/shortcode_our-values');
-	return ob_get_clean();
-}
-
-add_shortcode( 'shortcode_our_values', 'shortcode_our_values' );
-
-
-function shortcode_jobs() {
-	ob_start();
-	get_template_part( 'shortcodes/shortcode_jobs');
-	return ob_get_clean();
-}
-
-add_shortcode( 'shortcode_jobs', 'shortcode_jobs' );
-
-
-function shortcode_partner_tischlerei() {
-	ob_start();
-	get_template_part( 'shortcodes/shortcode_partner-tischlerei');
-	return ob_get_clean();
-}
-
-add_shortcode( 'shortcode_partner_tischlerei', 'shortcode_partner_tischlerei' );
-
-
-function shortcode_partner_bestattung() {
-	ob_start();
-	get_template_part( 'shortcodes/shortcode_partner-bestattung');
-	return ob_get_clean();
-}
-
-add_shortcode( 'shortcode_partner_bestattung', 'shortcode_partner_bestattung' );
-
-
-function shortcode_your_opinion() {
-	ob_start();
-	get_template_part( 'shortcodes/shortcode_your-opinion');
-	return ob_get_clean();
-}
-
-add_shortcode( 'shortcode_your_opinion', 'shortcode_your_opinion' );
-
-
-function shortcode_testimonials_tischlerei() {
-	ob_start();
-	get_template_part( 'shortcodes/shortcode_testimonials-tischlerei');
-	return ob_get_clean();
-}
-
-add_shortcode( 'shortcode_testimonials_tischlerei', 'shortcode_testimonials_tischlerei' );
-
-
-function shortcode_testimonials_bestattung() {
-	ob_start();
-	get_template_part( 'shortcodes/shortcode_testimonials-bestattung');
-	return ob_get_clean();
-}
-
-add_shortcode( 'shortcode_testimonials_bestattung', 'shortcode_testimonials_bestattung' );
-
-
-function shortcode_faqs() {
-	ob_start();
-	get_template_part( 'shortcodes/shortcode_faqs');
-	return ob_get_clean();
-}
-
-add_shortcode( 'shortcode_faqs', 'shortcode_faqs' );
-
-
-function shortcode_projects_slider() {
-	ob_start();
-	get_template_part( 'shortcodes/shortcode_projects-slider');
-	return ob_get_clean();
-}
-
-add_shortcode( 'shortcode_projects_slider', 'shortcode_projects_slider' );
-
-
-
-function shortcode_projects_overview() {
-	ob_start();
-	get_template_part( 'shortcodes/shortcode_projects-overview');
-	return ob_get_clean();
-}
-
-add_shortcode( 'shortcode_projects_overview', 'shortcode_projects_overview' );
+add_shortcode( 'shortcode_youtube_video', 'shortcode_youtube_video' );
 
 
 

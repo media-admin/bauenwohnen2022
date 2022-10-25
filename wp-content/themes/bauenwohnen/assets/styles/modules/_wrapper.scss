@@ -22,7 +22,17 @@
 
 .fullwith-wrapper {
 	width: 100vw;
-	margin-left: -18px;
-	padding-left: 36px !important;
-	padding-right: 36px !important;
+	overflow: hidden;
+	margin-left: -18px !important;
+	padding-left: 18px !important;
+	padding-right: 18px !important;
+}
+
+
+@media (min-width: 800px) {
+	.fullwith-wrapper {
+		margin-left: -36px !important;
+		padding-left: 54px !important;
+		padding-right: 36px !important;
+	}
 }

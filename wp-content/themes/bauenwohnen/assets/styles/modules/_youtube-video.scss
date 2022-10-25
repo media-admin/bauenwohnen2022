@@ -1,0 +1,106 @@
+/* === YOUTUBE VIDEOS === */
+
+.video--fullwidth iframe {
+	position: relative !important;
+	width: 100% !important;
+	height: 100% !important;
+	min-height: 550px;
+}
+
+
+/* Video Wrapper */
+.video_wrapper {
+
+	background: rgba(112,122,122,0.15);
+	background-size: cover;
+	position: relative;
+	height: 400px;
+	width: 100%;
+	text-align: center;
+
+		.video_trigger {
+
+		padding: 130px 30px;
+		height: -webkit-calc( 100% - 260px );
+		height: -moz-calc( 100% - 260px );
+		height: -o-calc( 100% - 260px );
+		height: calc( 100% - 260px );
+
+		width: -webkit-calc( 100% - 60px );
+		width: -moz-calc( 100% - 60px );
+		width: -o-calc( 100% - 60px );
+		width: calc( 100% - 60px );
+
+		position: absolute;
+		bottom: 0;
+		z-index: 9;
+		background-color: rgba( 0, 0, 0, .8 );
+		color: #fff;
+
+		&:before {
+			content: '\f04b';
+			font-family: 'FontAwesome';
+			position: absolute;
+			z-index: -1;
+			font-size: 120px;
+			color: rgba( 255, 255, 255, .2 );
+			width: 120px;
+			height: 120px;
+			line-height: 120px;
+			text-align: center;
+			top: -webkit-calc( 50% - 60px );
+			top: calc( 50% - 60px );
+			left: -webkit-calc( 50% - 60px );
+			left: calc( 50% - 60px );
+		}
+
+	}
+
+	.video_layer {
+
+	position: relative;
+	display: none;
+	height: inherit;
+	width: inherit;
+	margin: auto;
+
+	iframe {
+		border: 0px none transparent;
+		height: inherit;
+		width: inherit;
+		vertical-align: middle;
+	}
+
+	}
+
+}
+
+p.text-center {
+	position: relative !important;
+	display: block !important;
+	margin: 25px auto !important;
+	margin-top: 5% !important;
+	padding: 15px !important;
+}
+
+.button--load-more {
+	position: relative !important;
+	display: inline-block !important;
+	width: auto !important;
+	color: #ffffff;
+	font-size: 0.9rem;
+	font-weight: 500;
+	line-height: 1.2em;
+	text-align: center !important;
+	background: #A12528;
+	border: none;
+	border-radius: 28px;
+	margin: 0.25rem 0;
+	margin-bottom: 2rem !important;
+	padding: 0.75rem 1rem;
+}
+
+.button--load-more:hover {
+	color: #A12528;
+	background:  #ffffff;
+}

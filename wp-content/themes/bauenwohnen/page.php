@@ -12,7 +12,7 @@ get_header();
 				<h1 class="site-title h1__title">
 					<?php the_title();?>
 				</h1>
-				<div class="page__content-container">
+				<div class="page__content-container content-wrapper">
 					<?php
 						global $post;
 						$content = apply_filters('the_content',$post->post_content);
