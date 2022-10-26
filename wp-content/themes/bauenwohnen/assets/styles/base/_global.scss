@@ -17,6 +17,14 @@ body {
 	background-color: $lightGray;
 	margin: 0px;
 	padding: 0px;
+
+	/* hyphens */
+	 -moz-hyphens: auto;
+	 -o-hyphens: auto;
+	 -webkit-hyphens: auto;
+	 -ms-hyphens: auto;
+	 hyphens: auto;
+
 }
 
 
