@@ -126,10 +126,6 @@ function buw_register_scripts() {
 	wp_register_script( 'slick', get_template_directory_uri() . '/vendor/slick-1.8.1/slick/slick.min.js', '', null, true );
 	wp_enqueue_script( 'slick' );
 
-	/* --- Import Lightbox Scripts --- */
-	wp_register_script( 'lightbox', get_template_directory_uri() . '/vendor/lightbox2/dist/js/lightbox.js', '', null, true );
-	wp_enqueue_script( 'lightbox' );
-
 
 	/* --- Import Cookie Notice Scripts --- */
 	wp_register_script( 'dywc', get_template_directory_uri() . '/assets/scripts/dywc.js', '', null, true );
@@ -142,6 +138,11 @@ function buw_register_scripts() {
 	/* --- Import Button Back-to-Top --- */
 	wp_register_script( 'button-back-to-top', get_template_directory_uri() . '/assets/scripts/modules/button-back-to-top.js', '', null, true );
 	wp_enqueue_script( 'button-back-to-top' );
+
+
+	/* --- Import Lightbox Scripts --- */
+	wp_register_script( 'lightbox', get_template_directory_uri() . '/assets/scripts/lightbox.js', '', null, true );
+	wp_enqueue_script( 'lightbox' );
 
 }
 
