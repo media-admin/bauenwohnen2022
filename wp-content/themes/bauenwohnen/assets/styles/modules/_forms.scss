@@ -47,9 +47,6 @@
 }
 
 
-
-
-
 .contact-form-section__form ::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 	font-weight: 100;
 	font-size: 0.8rem;
@@ -76,6 +73,11 @@
 }
 
 
+input[type=radio] {
+	margin-right: 0.25em;
+}
+
+
 .contact-form-section__form > div.column--half {
 	flex: 100%; /* or - flex: 0 50% - or - flex-basis: 50% - */
 	padding: 0.25rem;
@@ -95,12 +97,18 @@
 }
 
 @media (min-width: 800px) {
-	.contact-form-section__form > div.column--half {
-		padding: 0.5rem;
+	.contact-form-section__form > div.column--full {
+		padding: 0.0rem;
+		padding-left: 1.0rem;
 	}
 }
 
 
+h2.contact-form-section__form-heading {
+	font-size: 1.6rem !important;
+	font-weight: 300 !important;
+	line-height: 2.4rem !important;
+}
 
 
 .contact-form-section__form-item {
@@ -110,10 +118,9 @@
 	background-color: transparent;
 	box-shadow: none;
 	border: none;
-	padding: 0.25rem;
-	border-bottom: 2px solid $mainBlue;
-	padding-bottom: 0.5rem;
-	margin: 1.5rem auto;
+	padding: 0.5rem;
+	border: 1px solid $mainBlue;
+	margin: 0.5rem auto;
 }
 
 
@@ -190,7 +197,7 @@
 	box-shadow: none;
 	border: none;
 	padding: 0.25rem;
-	border-bottom: 2px solid $mainBlue;
+	/* border-bottom: 2px solid $mainBlue; */
 	padding-bottom: 1.5rem;
 	margin: 1.5rem auto;
 }
@@ -212,9 +219,29 @@
 	box-shadow: none;
 	border: none;
 	padding: 0.25rem;
-	border-bottom: 2px solid $mainBlue;
+	/* border-bottom: 2px solid $mainBlue; */
 	padding-bottom: 1.5rem;
-	margin: 1.5rem auto;
+	/* margin: 1.5rem auto; */
+}
+
+
+.contact-form-section__form-item-gender {
+	position: relative;
+	display: block;
+	width: 100%;
+	line-height: 1.4rem;
+	color: $mainGray !important;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	padding: 0.25rem;
+	padding-bottom: 1.5rem;
+	/* margin: 1.5rem auto; */
+}
+
+
+.contact-form-section__form-item-gender .wpcf7-list-item.first {
+	margin-left: 0.0rem !important;
 }
 
 
@@ -229,6 +256,10 @@
 
 .contact-form-section__form-item-message {
 	min-height: 100px;
+}
+
+.contact-form-section__form-item-dsgvo .wpcf7-acceptance .wpcf7-list-item {
+	margin-left: -0.0rem !important;
 }
 
 

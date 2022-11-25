@@ -42,7 +42,40 @@ function buw_post_types() {
 	add_post_type_support( 'project', 'thumbnail' );
 
 
-	/* --- Custom Post Type PROJEKTE --- */
+
+	/* --- Custom Post Type HAUSTYPEN --- */
+	$labels = array(
+		'name' =>  'Haustypen',
+		'add_new' => 'Neue Haustype erstellen',
+		'edit_item' => 'Haustype bearbeiten',
+		'singular_name' => 'Haustype',
+		'all_items' => 'Alle Haustypen',
+		'supports' => array('title', 'editor', 'author', 'custom-fields',
+	));
+
+	register_post_type( 'housetype', array(
+		'show_in_rest' => true,
+		'public' => true,
+		'show_ui' => true,
+		'labels' => $labels,
+		'taxonomies' => array('post_tag'),
+		'supports' => ['editor', 'revisions', 'thumbnail', 'title', 'excerpt', 'custom-fields'],
+		'has_archive' => false,
+		'exclude_from_search' => false,
+		'rewrite' => array('slug' => 'haustype', 'with_front' => true, 'pages' => true, 'feeds' => true,),
+		'menu_position' => 10,
+		'show_in_admin_bar'   => true,
+		'show_in_nav_menus'   => false,
+		'publicly_queryable'  => true,
+		'menu_icon' => 'dashicons-admin-multisite'
+	));
+
+	add_post_type_support( 'project', 'thumbnail' );
+
+
+
+
+	/* --- Custom Post Type HIGHLIGHTS --- */
 	$labels = array(
 		'name' =>  'Highlights',
 		'add_new' => 'Neues Highlight anlegen',

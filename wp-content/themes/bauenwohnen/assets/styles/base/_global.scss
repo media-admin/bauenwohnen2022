@@ -28,6 +28,11 @@ body {
 }
 
 
+input {
+	accent-color: $mainBlue;
+}
+
+
 a {
 	color: $mainGray;
 	font-weight: 600;
@@ -66,6 +71,8 @@ ul.listing {
 
 @media (min-width: 800px) {
 	.site-content {
+		max-width: 1200px !important;
+		margin: 0 auto !important;
 		padding-top: 0px;
 	}
 }

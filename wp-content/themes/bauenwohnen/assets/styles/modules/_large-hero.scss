@@ -78,16 +78,25 @@
 
 .home-slider .slick-slide img {
   width: 100vw;
-  object-fit: cover;
+  object-fit: cover !important;
   object-position: center center;
   min-height: 500px;
+  max-height: 700px;
 }
 
 
-.home-slider img {
+/* .home-slider img {
   object-fit: cover;
   object-position: center center;
   min-height: 500px;
+} */
+
+.home-slider img {
+  width: 100vw;
+  object-fit: cover !important;
+  object-position: center center;
+  min-height: 500px;
+  max-height: 700px;
 }
 
 
@@ -115,6 +124,8 @@
 @media (min-width: 800px) {
   .home-slider__claim-container {
     position: relative;
+    bottom: 0px;
+    margin-bottom: 0px !important;
   }
 }
 
@@ -135,10 +146,11 @@
 
 @media (min-width: 800px) {
   .home-slider .slick-slide img.home-slider__claim {
+    position: relative;
+    display: block;
     min-height: inherit;
     width: 25% !important;
     margin-top: inherit;
-    bottom: 25px;
   }
 }
 
