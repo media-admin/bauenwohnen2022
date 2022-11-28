@@ -1,0 +1,96 @@
+.single-housetype__content-container {
+	position: relative;
+	display: block;
+	width: 100%;
+
+}
+
+.single-housetype__content-columns {
+	position: relative;
+	display: flex;
+	width: 100%;
+	flex: 2;
+	gap: 1.0rem;
+	background-color: white !important;
+	margin-bottom: 2.5rem;
+}
+
+.single-housetype__content-column--left {
+	position: relative;
+	width: 50%;
+	padding: 1.0rem;
+}
+
+.single-housetype__content-column-thumbnail {
+	position: relative;
+}
+
+.single-housetype__content-column-thumbnail-img {
+
+}
+
+.single-housetype__content-column-gallery {
+	position: relative;
+	padding-top: 0.5rem;
+}
+
+.single-housetype__content-column--right {
+	position: relative;
+	width: 50%;
+	padding: 1.0rem;
+}
+
+.single-housetype__content-descripion {
+
+}
+
+.single-housetype__content-price {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin-top: 2.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.single-housetype__plan-container {
+	position: relative;
+	display: flex;
+	width: 100%;
+	flex: 3;
+	gap: 1.0rem;
+	background-color: $mainBlue !important;
+	margin-bottom: 2.5rem;
+	padding: 1.0rem;
+}
+
+
+.single-housetype__plan-floor1 {
+	gap: 1.0rem;
+}
+
+.single-housetype__plan-floor2 {
+	gap: 1.0rem;
+}
+
+.single-housetype__plan-basement {
+	gap: 1.0rem;
+}
+
+.single-housetype__plan-container a:before {
+	content: "" !important;
+	position: absolute;
+	top: 0px !important;
+	right: 0px !important;
+	bottom: 0px !important;
+	left: 0px !important;
+	background-color: rgba(255,255,255,0.95) !important;
+	mix-blend-mode: color;
+}
+
+
+.single-housetype__location-map {
+	position: relative;
+	display: block;
+	width: 100% !important;
+	margin-bottom: 2.5rem;
+}

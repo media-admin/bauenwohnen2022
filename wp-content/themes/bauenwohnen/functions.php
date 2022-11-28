@@ -140,9 +140,14 @@ function buw_register_scripts() {
 	wp_enqueue_script( 'button-back-to-top' );
 
 
-	/* --- Import Lightbox Scripts --- */
+	/* --- Import Lightbox Scripts ---
 	wp_register_script( 'lightbox', get_template_directory_uri() . '/assets/scripts/lightbox.js', '', null, true );
 	wp_enqueue_script( 'lightbox' );
+
+
+	wp_register_script( 'swipe', get_template_directory_uri() . '/assets/scripts/modules/jquery.detect_swipe.min.js', '', null, true );
+	wp_enqueue_script( 'swipe' );
+	*/
 
 }
 
