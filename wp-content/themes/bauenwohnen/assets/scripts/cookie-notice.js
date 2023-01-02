@@ -59,7 +59,7 @@ dywc.init({
 					dywc.log("Load Statistic Tracking");
 
 					var el = document.createElement('script');
-					// el.src = 'https://www.googletagmanager.com/gtag/js?id=G-J5TH2ZBPQL'; --> DEAKTIVIERT, um die Analytics-Zahlen nicht zu beeinflussen
+					el.src = 'https://www.googletagmanager.com/gtag/js?id=G-J5TH2ZBPQL';
 					el.async = 1;
 					document.getElementsByTagName('head')[0].appendChild(el);
 
@@ -68,11 +68,10 @@ dywc.init({
 					function gtag(){dataLayer.push(arguments);}
 					gtag('js', new Date());
 
-					// gtag('config', 'G-J5TH2ZBPQL', { 'anonymize_ip': true }); --> DEAKTIVIERT, um die Analytics-Zahlen nicht zu beeinflussen
+					gtag('config', 'G-J5TH2ZBPQL', { 'anonymize_ip': true });
 
  				},
  				reject: function() {
-
 				// Hier kommt der Opt-Out Code rein
 				// Folgendes Beispiel für Google Analytics
 

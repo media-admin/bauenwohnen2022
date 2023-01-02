@@ -71,8 +71,6 @@ ul.listing {
 
 @media (min-width: 800px) {
 	.site-content {
-		max-width: 1200px !important;
-		margin: 0 auto !important;
 		padding-top: 0px;
 	}
 }
@@ -133,28 +131,6 @@ ul.listing {
 }
 
 
-.box--centered {
-	text-align: center !important;
-}
-
-
-.fullwidth {
-	position: relative;
-	display: block;
-	width: calc(100% + 36px) !important;
-	height: auto;
-	overflow: hidden !important;
-	object-fit: cover !important;
-	margin-right: -18px !important;
-	margin-left: -18px !important;
-	padding-left: -18px !important;
-	padding-right: -18px !important;
-}
-
-
-
-
-
 /* === Image Styles === */
 
 /* --- All Images --- */
@@ -165,21 +141,6 @@ img {
 
 
 /* --- Image Sizes & Positions --- */
-.gallery-overlay {
-
-}
-
-.gallery-overlay a:before {
-	content: "" !important;
-	position: absolute;
-	top: 0px !important;
-	right: 0px !important;
-	bottom: 0px !important;
-	left: 0px !important;
-	background-color: rgba(255,255,255,0.95) !important;
-	mix-blend-mode: color;
-}
-
 
 .img--fullwidth {
 	max-width: inherit;

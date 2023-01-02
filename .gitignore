@@ -1,7 +1,7 @@
 # ignore everything in the root except the "wp-content" directory.
 .well-known/
 backups/
-backups/
+stats/
 wp-admin/
 wp-includes/
 LICENSE

@@ -20,38 +20,18 @@
 }
 
 
-.content-container--blue {
-	background-color: $mainBlue !important;
-}
-
-
-
-.fullwidth-wrapper {
-	/*
+.fullwith-wrapper {
 	width: 100vw;
-	margin-left: -18px !important;
-	*/
-	width: calc(100% + 36px) !important;
 	overflow: hidden;
+	margin-left: -18px !important;
 	padding-left: 18px !important;
 	padding-right: 18px !important;
-
-	/* position: relative !important;
-	display: block !important;
-	width: 100%+36px !important;
-	height: auto;
-	overflow: hidden !important;
-	object-fit: cover !important;
-	margin-right: -18px !important;
-	margin-left: -18px !important;
-	padding-left: -18px !important;
-	padding-right: -18px !important; */
 }
 
 
 @media (min-width: 800px) {
 	.fullwith-wrapper {
-		/* margin-left: -36px !important; */
+		margin-left: -36px !important;
 		padding-left: 54px !important;
 		padding-right: 36px !important;
 	}
