@@ -88,3 +88,7 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+
+# ignore .htaccess file
+*.htaccess
