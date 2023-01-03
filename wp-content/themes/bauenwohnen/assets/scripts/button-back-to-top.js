@@ -5,7 +5,7 @@
 jQuery(document).ready(function(){
 
 	// Der Button wird mit JavaScript erzeugt und vor dem Ende des body eingebunden.
-	var back_to_top_button = ['<a href="#top" class="back-to-top"><p><img src="https://www.bauenwohnen.com/wp-content/themes/bauenwohnen/assets/icons/button_back-to-top.svg" alt="Back to Top Button"></p></a>'].join("");
+	var back_to_top_button = ['<a href="#top" class="back-to-top"><p><img src="https://www.bauenwohnen-maintain.dev/wp-content/themes/bauenwohnen/assets/icons/button_back-to-top.svg" alt="Back to Top Button"></p></a>'].join("");
 	jQuery("body").append(back_to_top_button)
 
 	// Der Button wird ausgeblendet
